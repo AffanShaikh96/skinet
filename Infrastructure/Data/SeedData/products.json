@@ -1,0 +1,35 @@
+[
+    {
+        "Name": "Black Atheltic Shoes",
+        "Description":"Addidas",
+        "Price":4000,
+        "ProductImageUrl":"images/products/abc1.jpg",
+        "ProductTypeId":1,
+        "ProductBrandId":1
+    },
+    {
+        "Name": "Western Kurta Shalwar",
+        "Description":"J.",
+        "Price":5000,
+        "ProductImageUrl":"images/products/blue-jj.jpg",
+        "ProductTypeId":2,
+        "ProductBrandId":2
+    },
+    {
+        "Name": "Custom Stitched Shalwar Kameez",
+        "Description":"Jhonum",
+        "Price":6000,
+        "ProductImageUrl":"images/products/jhonum.jpg",
+        "ProductTypeId":2,
+        "ProductBrandId":3
+    },
+    {
+        "Name": "Blue pattern shirt",
+        "Description":"Brumano",
+        "Price":7300,
+        "ProductImageUrl":"images/products/brumano.jpg",
+        "ProductTypeId":3,
+        "ProductBrandId":4
+    }
+
+]

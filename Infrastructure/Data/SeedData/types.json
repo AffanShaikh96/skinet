@@ -1,0 +1,19 @@
+[
+    {
+        "Id": 1,
+        "Name":"Shoes"
+    },
+    {
+        "Id": 2,
+        "Name":"Western Clothing"
+    },
+    {
+        "Id": 3,
+        "Name":"Formal Shirts"
+    },
+    {
+        "Id": 4,
+        "Name":"Belts"
+    }
+
+]
