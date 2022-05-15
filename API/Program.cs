@@ -22,6 +22,11 @@ builder.Services.AddAutoMapper(typeof(MappingProfiles));
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<StoreContext>(x => x.UseSqlite(connectionString));
 builder.Services.AddApplicationServices();
+builder.Services.AddCors(opt=>{
+    opt.AddPolicy("CorsPolicy",policy=>{
+        policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:7265");
+    });
+});
 var app = builder.Build();
 
 //Migration code -- Start
@@ -44,6 +49,7 @@ using (var scope=app.Services.CreateScope()){
 // Configure the HTTP request pipeline.
 app.UseMiddleware<ExceptionMiddleware>();
 app.UseSwaggerDocumentation();
+app.UseCors("CorsPolicy");
 // if (app.Environment.IsDevelopment())
 // {
 //     app.UseSwagger();
